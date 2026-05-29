@@ -5,11 +5,40 @@ Home Surveillance Ecommerce Analysis
 
 ---
 
-# Business Context
+## Project Domain & Niche
 
-This project analyzes ecommerce sales and operational performance for home surveillance products. The goal is to identify sales trends, customer behavior, operational patterns, and business opportunities using data analysis.
+### Primary Domain
+- Ecommerce Analytics
+
+### Related Niches
+- Product Analytics
+- Operations Analytics
+- Smart Technology Analytics
+- Revenue & Sales Analytics
+- Business Intelligence
 
 ---
+
+## Dataset Overview
+
+This dataset appears to track ecommerce product listings, product features, pricing, inventory availability, sales performance, and seller operations for home surveillance and smart security products.
+
+The dataset contains information related to:
+- Product pricing
+- Revenue estimation
+- Inventory availability
+- Smart device capabilities
+- Product demand
+- Seller operational reach
+- Customer purchasing trends
+
+---
+
+## Business Context
+
+Home surveillance and smart security products are part of the rapidly growing smart technology and ecommerce industry. Businesses in this sector rely heavily on operational analytics, pricing strategies, inventory management, and product performance tracking to improve revenue and customer satisfaction.
+
+This project aims to analyze operational and sales-related trends within the home surveillance ecommerce market using Google Sheets and MySQL.
 
 # Project Objectives
 
