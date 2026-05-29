@@ -1,1 +1,1 @@
-This folder contains note gotten for analysis.
+This folder contains project planning notes, observations, cleaning notes, and business questions for the analysis project.
