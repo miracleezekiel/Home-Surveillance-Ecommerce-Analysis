@@ -1,10 +1,21 @@
-# data-analysis-learning
-A structured repository documenting my data analysis learning journey using Excel, SQL, Power BI, and Python.
-# Data Analysis Learning Journey
-This repository documents my hands-on learning and practice in data analysis.
-Tools covered:
-- Microsoft Excel
-- SQL
-- Power BI
-- Python
-Each folder contains datasets, practice exercises, and mini projects as I progress.
+# Data Analysis Project
+
+## Objective
+This project contains practical data analysis work using Google Sheets and MySQL.
+
+## Tools Used
+- Google Sheets
+- MySQL
+- GitHub
+
+## Workflow
+1. Data Cleaning
+2. Data Analysis
+3. SQL Querying
+4. Documentation
+
+## Project Files
+- Raw Dataset
+- Cleaned Dataset
+- SQL Queries
+- Screenshots
