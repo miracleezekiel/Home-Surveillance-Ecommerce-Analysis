@@ -88,6 +88,24 @@ This project aims to analyze operational and sales-related trends within the hom
 - Write insights
 
 ---
+## Validation Progress
+
+Validation activities completed:
+
+- Initial dataset structure review
+- Data type assessment
+- Placeholder value investigation
+- Initial frequency analysis for selected values
+
+Validation activities in progress:
+
+- Missing value assessment
+- Duplicate assessment
+- Numeric field validation
+- Boolean field validation
+
+No cleaning actions have been performed at this stage.
+
 
 # Initial Business Questions
 
