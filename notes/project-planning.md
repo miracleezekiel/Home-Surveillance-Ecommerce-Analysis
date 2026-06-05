@@ -95,14 +95,19 @@ Validation activities completed:
 - Initial dataset structure review
 - Data type assessment
 - Placeholder value investigation
-- Initial frequency analysis for selected values
+- Brand field missing-value assessment
 
-Validation activities in progress:
+### In Progress
 
-- Missing value assessment
+- MPN missing-value validation
 - Duplicate assessment
+- Boolean consistency validation
 - Numeric field validation
-- Boolean field validation
+
+### Preliminary Observations
+
+- No blank cells identified in the Brand field within active dataset records.
+- Additional validation is being performed on fields containing placeholder values and apparent missing information.
 
 No cleaning actions have been performed at this stage.
 
