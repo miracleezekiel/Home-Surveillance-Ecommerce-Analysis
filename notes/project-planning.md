@@ -96,13 +96,14 @@ Validation activities completed:
 - Data type assessment
 - Placeholder value investigation
 - Brand field missing-value assessment
+- Boolean consistency validation
+- Numeric field validation
 
 ### In Progress
 
 - MPN missing-value validation
 - Duplicate assessment
-- Boolean consistency validation
-- Numeric field validation
+
 
 ### Preliminary Observations
 
