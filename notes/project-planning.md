@@ -142,7 +142,20 @@ These fields appear to represent duplicated columns rather than duplicate record
 No columns have been removed pending further business-context validation.
 
 ## Cleaning Notes
-- To be updated during cleaning
+### Cleaning Strategy
+
+The raw dataset will remain unchanged.
+
+Cleaning activities will be performed on a separate working copy of the dataset.
+
+Potential cleaning areas identified during validation include:
+
+- Placeholder value review
+- Duplicate field review
+- Data standardization
+- Missing-value treatment
+
+All cleaning decisions will be documented and justified before implementation.
 
 ## Assumptions
 - To be updated during analysis
