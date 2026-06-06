@@ -102,11 +102,13 @@ Initial review indicates selected pricing, sales, and inventory metrics are stor
 
 ### Duplicate Assessment
 
-A duplicate-record assessment was performed using a combination of Title, Brand, MPN, and UPC fields.
+Duplicate-record validation was performed using a combination of Title, Brand, MPN, and UPC fields.
 
-Repeated field names were identified within the dataset structure; however, these appear to represent duplicated columns rather than duplicated records.
+Initial assessment indicates reviewed records are unique and no duplicate records were identified during validation.
 
-No records have been removed at this stage.
+Repeated field names observed within the dataset appear to represent duplicated columns or dataset design choices rather than duplicate records.
+
+No records have been removed.
 
 ### Current Validation Scope
 
