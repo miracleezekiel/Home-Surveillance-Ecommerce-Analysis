@@ -12,14 +12,15 @@ Current Stage: Validation
 * Placeholder value investigation
 * Initial frequency analysis for selected placeholder values
 * Brand field review
+* Boolean consistency validation
+* Numeric field validation
+
 
 ### In Progress
 
 * Missing value validation
 * Duplicate validation
 * Data quality assessment
-* Numeric field validation
-* Boolean consistency validation
 
 No business conclusions have been generated at this stage.
 
@@ -89,6 +90,13 @@ Validation activities performed:
 * Blank-cell count results are under verification before conclusions are made.
 * Placeholder values such as "Not Applicable" and "Does Not Apply" are being assessed separately from blank cells.
 
+### Boolean Validation
+
+Initial review indicates selected feature fields are consistently represented using binary indicators (0 and 1).
+
+### Numeric Validation
+
+Initial review indicates selected pricing, sales, and inventory metrics are stored as numeric values. Further validation may be performed during data cleaning.
 ---
 
 ### Current Validation Scope
@@ -98,8 +106,6 @@ The following validation activities are being performed:
 * Missing value assessment
 * Placeholder value assessment
 * Duplicate investigation
-* Boolean consistency validation
-* Numeric field validation
 * Business context validation
 
 ---
