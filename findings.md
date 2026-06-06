@@ -14,12 +14,13 @@ Current Stage: Validation
 * Brand field review
 * Boolean consistency validation
 * Numeric field validation
+* Missing value assessment
+* Placeholder value assessment
+* Duplicate investigation
 
 
 ### In Progress
 
-* Missing value validation
-* Duplicate validation
 * Data quality assessment
 
 No business conclusions have been generated at this stage.
@@ -99,13 +100,18 @@ Initial review indicates selected feature fields are consistently represented us
 Initial review indicates selected pricing, sales, and inventory metrics are stored as numeric values. Further validation may be performed during data cleaning.
 ---
 
+### Duplicate Assessment
+
+A duplicate-record assessment was performed using a combination of Title, Brand, MPN, and UPC fields.
+
+Repeated field names were identified within the dataset structure; however, these appear to represent duplicated columns rather than duplicated records.
+
+No records have been removed at this stage.
+
 ### Current Validation Scope
 
 The following validation activities are being performed:
 
-* Missing value assessment
-* Placeholder value assessment
-* Duplicate investigation
 * Business context validation
 
 ---
