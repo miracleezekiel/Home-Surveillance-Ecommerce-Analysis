@@ -95,23 +95,20 @@ Validation activities completed:
 - Initial dataset structure review
 - Data type assessment
 - Placeholder value investigation
-- Brand field missing-value assessment
-- Boolean consistency validation
-- Numeric field validation
-
-### In Progress
-
+- Missing value assessment
 - MPN missing-value validation
-- Duplicate assessment
-
+- Numeric field validation
+- Boolean consistency validation
+- Duplicate-record assessment
 
 ### Preliminary Observations
 
 - No blank cells identified in the Brand field within active dataset records.
-- Additional validation is being performed on fields containing placeholder values and apparent missing information.
+- MPN field contains blank and placeholder values requiring business-context consideration.
+- Repeated field names were identified across multiple column groups.
+- Initial review suggests repeated columns represent dataset structure design rather than duplicate records.
 
 No cleaning actions have been performed at this stage.
-
 
 # Initial Business Questions
 
@@ -125,8 +122,24 @@ No cleaning actions have been performed at this stage.
 
 # Observations Section
 
-## Dataset Observations
-- To be updated during exploration
+### Dataset Structure Observation
+
+Repeated field names were identified across multiple column groups.
+
+Examples include:
+
+- Title (Column A and Column U)
+- Brand (Column B and Column V)
+- MPN (Column C and Column W)
+- UPC (Column D and Column X)
+
+Repeated fields were identified within the dataset structure.
+
+Sampling across multiple records indicates the duplicated fields contain identical values.
+
+These fields appear to represent duplicated columns rather than duplicate records.
+
+No columns have been removed pending further business-context validation.
 
 ## Cleaning Notes
 - To be updated during cleaning
