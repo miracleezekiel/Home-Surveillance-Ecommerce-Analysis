@@ -1,198 +1,222 @@
 # Project Planning Notes
 
 ## Project Title
+
 Home Surveillance Ecommerce Analysis
 
 ---
 
-## Project Domain & Niche
+## Project Domain
 
 ### Primary Domain
-- Ecommerce Analytics
 
-### Related Niches
-- Product Analytics
-- Operations Analytics
-- Smart Technology Analytics
-- Revenue & Sales Analytics
-- Business Intelligence
+* Ecommerce Analytics
+
+### Related Analytics Areas
+
+* Product Analytics
+* Operations Analytics
+* Business Intelligence
+* Revenue Analytics
+* Smart Technology Analytics
 
 ---
 
-## Dataset Overview
+## Project Overview
 
-This dataset appears to track ecommerce product listings, product features, pricing, inventory availability, sales performance, and seller operations for home surveillance and smart security products.
+This project analyzes ecommerce product listings, inventory information, pricing data, sales metrics, seller operations, and smart-device features related to home surveillance and smart security products.
 
-The dataset contains information related to:
-- Product pricing
-- Revenue estimation
-- Inventory availability
-- Smart device capabilities
-- Product demand
-- Seller operational reach
-- Customer purchasing trends
+The objective is to understand product performance, inventory trends, pricing behavior, and operational patterns within the home surveillance ecommerce market.
 
 ---
 
 ## Business Context
 
-Home surveillance and smart security products are part of the rapidly growing smart technology and ecommerce industry. Businesses in this sector rely heavily on operational analytics, pricing strategies, inventory management, and product performance tracking to improve revenue and customer satisfaction.
+Home surveillance and smart security products represent a rapidly growing segment of the ecommerce and smart technology industries.
 
-This project aims to analyze operational and sales-related trends within the home surveillance ecommerce market using Google Sheets and MySQL.
+Businesses operating in this market rely on:
 
-# Project Objectives
+* Product performance analysis
+* Pricing optimization
+* Inventory management
+* Seller performance monitoring
+* Revenue analysis
+* Market demand assessment
 
-- Understand sales performance
-- Identify top-performing products
-- Analyze customer purchasing behavior
-- Explore operational trends
-- Generate business insights
-
----
-
-# Tools Used
-
-- Google Sheets
-- MySQL
-- GitHub
+Data-driven decision-making in these areas can improve operational efficiency, customer satisfaction, and business performance.
 
 ---
 
-# Workflow Structure
+## Project Objectives
 
-## Phase 1 — Project Understanding
-- Understand dataset structure
-- Understand business context
-- Identify KPIs
-- Explore dataset columns
+The project aims to:
 
-## Phase 2 — Google Sheets
-- Data exploration
-- Data cleaning
-- Remove duplicates
-- Handle missing values
-- Format dates and numbers
-
-## Phase 3 — MySQL Analysis
-- Business analysis
-- SQL aggregations
-- Trend analysis
-- KPI calculations
-- Revenue analysis
-
-## Phase 4 — GitHub Documentation
-- Upload datasets
-- Upload SQL queries
-- Upload screenshots
-- Document findings
-- Write insights
-
----
-## Validation Progress
-
-Validation activities completed:
-
-- Initial dataset structure review
-- Data type assessment
-- Placeholder value investigation
-- Missing value assessment
-- MPN missing-value validation
-- Numeric field validation
-- Boolean consistency validation
-- Duplicate-record assessment
-
-### Validation Summary
-
-Validation activities identified:
-
-- Placeholder values
-- Missing values
-- Repeated field names
-- Numeric field consistency
-- Boolean field consistency
-
-### Missing Value Assessment Findings
-
-Several columns contain missing values, including UPC, MPN, WasPrice, and seller-related fields.
-
-A sample review of UPC records found that products remained identifiable through alternative fields such as Title and Brand.
-
-At this stage, missing UPC values are not being treated as data errors and no records have been removed.
-
-A cleaning decision log will be maintained to document all data-cleaning actions before implementation.
-
-### Preliminary Observations
-
-- No blank cells identified in the Brand field within active dataset records.
-- MPN field contains blank and placeholder values requiring business-context consideration.
-- Repeated field names were identified across multiple column groups.
-- Initial review suggests repeated columns represent dataset structure design rather than duplicate records.
-
-No cleaning actions have been performed at this stage.
-
-# Initial Business Questions
-
-- Which products generate highest revenue?
-- Which product categories perform best?
-- Which regions have highest sales?
-- What customer trends exist?
-- Which operational patterns affect sales?
+* Understand product sales performance
+* Evaluate inventory and demand patterns
+* Analyze pricing and discount strategies
+* Assess seller operational reach
+* Explore product-category performance
+* Generate business-focused insights
+* Develop a professional analytics portfolio project
 
 ---
 
-## Data Quality Methodology
+## Dataset Overview
 
-The project follows a validation-first approach.
+The dataset contains information related to:
 
-Data quality issues, placeholder values, missing values, and duplicate records are investigated and documented before any cleaning actions are performed.
+### Product Information
 
-Where business rules are unavailable, original dataset values are retained to preserve data integrity and avoid unsupported assumptions.
-# Observations Section
+* Title
+* Brand
+* MPN
+* UPC
+* Product Type
+* Primary Category
 
-### Dataset Structure Observation
+### Pricing and Revenue
 
-Repeated field names were identified across multiple column groups.
+* Price
+* WasPrice
+* Discount Percentage
+* Savings Amount
+* Revenue Proxy Metrics
 
-Examples include:
+### Inventory and Demand
 
-- Title (Column A and Column U)
-- Brand (Column B and Column V)
-- MPN (Column C and Column W)
-- UPC (Column D and Column X)
+* Units Sold
+* Available Inventory
+* Sell Through Rate
+* Demand Tier
 
-Repeated fields were identified within the dataset structure.
+### Smart Device Features
 
-Sampling across multiple records indicates the duplicated fields contain identical values.
+* Wi-Fi Capability
+* Motion Detection
+* AI Detection
+* Cloud Storage
+* Local Storage
+* Voice Control
+* Night Vision
+* Additional Smart Security Features
 
-These fields appear to represent duplicated columns rather than duplicate records.
+### Seller and Shipping Information
 
-No columns have been removed pending further business-context validation.
+* Seller Details
+* Geographic Information
+* Shipping Reach
+* Global Reach Metrics
 
-## Cleaning Notes
-### Cleaning Strategy
+---
 
-The raw dataset will remain unchanged.
+## Tools Used
 
-Cleaning activities will be performed on a separate working copy of the dataset.
+* Google Sheets
+* MySQL
+* GitHub
 
-Potential cleaning areas identified during validation include:
+---
 
-- Placeholder value review
-- Duplicate field review
-- Data standardization
-- Missing-value treatment
+## Project Methodology
+
+The project follows a validation-first analytical approach.
+
+Before any cleaning or transformation activities:
+
+1. Dataset structure is reviewed.
+2. Data types are assessed.
+3. Missing values are investigated.
+4. Placeholder values are reviewed.
+5. Duplicate records are assessed.
+6. Numeric and boolean fields are validated.
+
+Where business rules are unavailable, original values are retained to preserve data integrity and avoid unsupported assumptions.
+
+---
+
+## Workflow
+
+### Phase 1 — Dataset Understanding
+
+* Review dataset structure
+* Understand business context
+* Identify key metrics
+* Identify analytical opportunities
+
+### Phase 2 — Data Validation
+
+* Missing value assessment
+* Placeholder value investigation
+* Duplicate assessment
+* Numeric validation
+* Boolean validation
+
+### Phase 3 — Data Cleaning
+
+* Document cleaning decisions
+* Perform approved transformations
+* Maintain data integrity
+* Preserve raw dataset
+
+### Phase 4 — Analysis in Google Sheets
+
+* Exploratory analysis
+* KPI calculations
+* Trend identification
+* Business observations
+
+### Phase 5 — Analysis in MySQL
+
+* Aggregations
+* Filtering
+* Trend analysis
+* Performance analysis
+* Business reporting
+
+### Phase 6 — Documentation
+
+* Document methodology
+* Upload SQL queries
+* Upload screenshots
+* Document findings
+* Publish project to GitHub
+
+---
+
+## Initial Business Questions
+
+* Which products generate the highest revenue?
+* Which product categories perform best?
+* Which pricing strategies appear most effective?
+* Which products demonstrate the strongest demand?
+* Which sellers have the greatest market reach?
+* Which operational factors influence product performance?
+
+---
+
+## Data Quality Approach
+
+Data quality issues are investigated before any cleaning actions are performed.
+
+Potential areas of review include:
+
+* Missing values
+* Placeholder values
+* Duplicate records
+* Duplicate columns
+* Data consistency issues
+* Field standardization opportunities
 
 All cleaning decisions will be documented and justified before implementation.
 
-## Assumptions
-- To be updated during analysis
-
 ---
 
-# Expected Deliverables
+## Expected Deliverables
 
-- Cleaned dataset
-- SQL analysis queries
-- Business insights
-- GitHub documentation
-- Analytical findings
+* Validated dataset
+* Cleaned working dataset
+* Google Sheets analysis
+* MySQL analysis queries
+* Business insights
+* Project documentation
+* GitHub portfolio project
