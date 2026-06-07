@@ -140,6 +140,13 @@ No cleaning actions have been performed at this stage.
 
 ---
 
+## Data Quality Methodology
+
+The project follows a validation-first approach.
+
+Data quality issues, placeholder values, missing values, and duplicate records are investigated and documented before any cleaning actions are performed.
+
+Where business rules are unavailable, original dataset values are retained to preserve data integrity and avoid unsupported assumptions.
 # Observations Section
 
 ### Dataset Structure Observation
