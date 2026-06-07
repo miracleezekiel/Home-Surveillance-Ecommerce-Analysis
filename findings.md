@@ -1,4 +1,28 @@
 # Findings
+# Findings
+
+## Project Status
+
+Current Stage: Validation
+
+Completed:
+- Dataset familiarization
+- Initial structure assessment
+- Placeholder value investigation
+
+In Progress:
+- Missing value validation
+- Duplicate validation
+- Data quality assessment
+
+No business conclusions have been generated at this stage.
+
+## Validation Updates
+
+- Brand field reviewed.
+- No blank cells identified within active dataset records.
+- MPN field currently undergoing missing-value validation.
+- No cleaning actions have been performed.
 
 ## Project Status
 
@@ -47,7 +71,28 @@ The dataset includes:
 The dataset structure supports ecommerce analytics, operations analytics, product analytics, and business intelligence use cases.
 
 ---
+## Data Cleaning Decision
 
+Placeholder values and missing values were identified during validation.
+
+Examples include:
+
+- Unknown
+- Unbranded/Generic
+- Other
+- Not Applicable
+- Does Not Apply
+- Blank values
+
+No modifications were made at this stage.
+
+### Reason
+
+Dataset documentation does not provide sufficient business rules to determine whether these values represent missing information, valid business categories, or system-generated placeholders.
+
+To preserve data integrity, original values were retained.
+
+Future cleaning actions would require stakeholder clarification or supporting business documentation.
 ### Placeholder Value Investigation
 
 The following values were identified during initial review and are currently under validation:
