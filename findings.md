@@ -180,5 +180,26 @@ Decision:
 No modifications made due to lack of business rules from data owner.
 
 Rationale:
+
+
+## Data Integrity Decision
+
+Placeholder values, blank cells, and missing information were identified during validation.
+
+Examples included:
+
+- Unknown
+- Unbranded/Generic
+- Other
+- Not Applicable
+- Does Not Apply
+
+A decision was made not to alter, replace, or remove these values.
+
+Rationale:
+
+Without business rules or stakeholder guidance, modifying these values could introduce assumptions and compromise data integrity.
+
+The dataset has therefore been preserved in its original state while all observations and validation activities have been documented.
 Altering these values could introduce assumptions not supported by source documentation.
 All observations remain subject to validation before any cleaning, transformation, analysis, or business conclusions are generated.
