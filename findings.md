@@ -67,6 +67,16 @@ At this stage, these values have not been classified as errors because they may 
 * Placeholder values
 * Legitimate business classifications
 
+### Missing Value Investigation
+
+The UPC field contains a substantial number of blank values.
+
+A manual review of sampled records indicated that products remained identifiable through existing Title and Brand information.
+
+Current assessment suggests that missing UPC values may represent unavailable product identifiers rather than invalid records.
+
+No records have been removed.
+
 Further validation is required before determining any cleaning actions.
 
 ---
