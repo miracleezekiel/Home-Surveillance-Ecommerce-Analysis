@@ -171,4 +171,14 @@ Current activities remain limited to:
 * Duplicate investigation
 * Business context understanding
 
+Observed:
+- Unknown values in Brand field
+- Not Applicable values in MPN field
+- Blank UPC values
+
+Decision:
+No modifications made due to lack of business rules from data owner.
+
+Rationale:
+Altering these values could introduce assumptions not supported by source documentation.
 All observations remain subject to validation before any cleaning, transformation, analysis, or business conclusions are generated.
