@@ -67,6 +67,27 @@ At this stage, these values have not been classified as errors because they may 
 * Placeholder values
 * Legitimate business classifications
 
+### Placeholder Value Assessment
+
+Several placeholder values were identified during validation, including:
+
+- Unknown
+- Not Applicable
+- Does Not Apply
+- Do Not Apply
+- Not Specified
+- ?
+
+Business-context review determined that some values represent missing information, while others represent legitimate business categories.
+
+For example:
+
+- Unbranded/Generic was retained as a valid category.
+- Other was retained as a valid product type.
+- Unknown, Not Specified, and MPN placeholder values were classified as missing information for cleaning purposes.
+
+All cleaning actions will be performed on a working copy of the dataset while preserving the original raw dataset.
+
 ### Missing Value Investigation
 
 The UPC field contains a substantial number of blank values.
