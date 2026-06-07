@@ -101,6 +101,26 @@ Validation activities completed:
 - Boolean consistency validation
 - Duplicate-record assessment
 
+### Validation Summary
+
+Validation activities identified:
+
+- Placeholder values
+- Missing values
+- Repeated field names
+- Numeric field consistency
+- Boolean field consistency
+
+### Missing Value Assessment Findings
+
+Several columns contain missing values, including UPC, MPN, WasPrice, and seller-related fields.
+
+A sample review of UPC records found that products remained identifiable through alternative fields such as Title and Brand.
+
+At this stage, missing UPC values are not being treated as data errors and no records have been removed.
+
+A cleaning decision log will be maintained to document all data-cleaning actions before implementation.
+
 ### Preliminary Observations
 
 - No blank cells identified in the Brand field within active dataset records.
