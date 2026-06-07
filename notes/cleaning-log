@@ -1,1 +1,26 @@
+# Cleaning Log
+
+## Cleaning Philosophy
+
+The project follows a validation-first and data-integrity-first approach.
+
+Validation activities were completed before any cleaning actions were considered.
+
+Where business rules were unavailable, original dataset values were retained to avoid unsupported assumptions.
+
+The raw dataset will remain unchanged throughout the project.
+
+---
+
+## Cleaning Session 1
+
+Date: 2026-06-07
+
+Objective:
+
+Perform initial data-cleaning review focused on formatting consistency, field standardization, and structural assessment.
+
+No records will be deleted during this stage.
+
+No placeholder values will be modified without documented justification.
 
