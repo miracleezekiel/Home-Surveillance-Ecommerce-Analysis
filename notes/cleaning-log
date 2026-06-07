@@ -24,3 +24,57 @@ No records will be deleted during this stage.
 
 No placeholder values will be modified without documented justification.
 
+## Cleaning Review Findings
+
+### Brand Field Review
+
+Potential Issue:
+Brand value "Rin.G" identified during formatting review.
+
+Validation Performed:
+
+* Product title reviewed.
+* Smart Home Ecosystem reviewed.
+* Product context reviewed.
+
+Evidence:
+
+* Product title contains references to Ring products.
+* Smart Home Ecosystem classified as Ring (Amazon).
+* No evidence found indicating Rin.G represents a separate brand.
+
+Decision:
+Approved for standardization.
+
+Planned Transformation:
+Rin.G → Ring
+
+Reason:
+Available supporting fields indicate the value is a typographical variation of Ring rather than a distinct brand.
+
+---
+
+### Product Type Review
+
+Potential Issue:
+Product Type value "?" identified during review.
+
+Validation Performed:
+
+* Product title reviewed.
+* Brand reviewed.
+* Primary Category reviewed.
+
+Evidence:
+
+* Product title identifies the product as a Digital Video Recorder.
+* Primary Category is Surveillance DVRs & NVRs.
+* The value "?" does not provide meaningful business classification.
+
+Decision:
+Under Review
+
+Reason:
+Although supporting fields suggest a likely product classification, dataset documentation does not currently provide sufficient business rules to justify replacing the value.
+
+No modification has been performed at this stage.
