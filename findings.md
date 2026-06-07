@@ -1,59 +1,32 @@
 # Findings
-# Findings
 
 ## Project Status
 
-Current Stage: Validation
+**Current Stage:** Validation and Data Quality Assessment
 
-Completed:
-- Dataset familiarization
-- Initial structure assessment
-- Placeholder value investigation
-
-In Progress:
-- Missing value validation
-- Duplicate validation
-- Data quality assessment
-
-No business conclusions have been generated at this stage.
-
-## Validation Updates
-
-- Brand field reviewed.
-- No blank cells identified within active dataset records.
-- MPN field currently undergoing missing-value validation.
-- No cleaning actions have been performed.
-
-## Project Status
-
-Current Stage: Validation
-
-### Completed
+### Completed Activities
 
 * Dataset familiarization
 * Initial dataset structure assessment
 * Data type assessment
+* Business context review
 * Placeholder value investigation
-* Initial frequency analysis for selected placeholder values
-* Brand field review
-* Boolean consistency validation
-* Numeric field validation
 * Missing value assessment
-* Placeholder value assessment
-* Duplicate investigation
+* Numeric field validation
+* Boolean field validation
+* Duplicate record assessment
 
-
-### In Progress
+### Current Activity
 
 * Data quality assessment
+* Documentation of validation findings
+* Preparation for data cleaning decisions
 
-No business conclusions have been generated at this stage.
+No business insights or performance conclusions have been generated at this stage.
 
 ---
 
-## Validation Updates
-
-### Initial Dataset Assessment
+## Initial Dataset Assessment
 
 The dataset contains ecommerce product listing, inventory, pricing, sales, seller, shipping, and smart-device feature information related to home surveillance and smart security products.
 
@@ -68,183 +41,116 @@ The dataset includes:
 * Seller and geographic information
 * Shipping reach and operational metrics
 
-The dataset structure supports ecommerce analytics, operations analytics, product analytics, and business intelligence use cases.
+The dataset structure supports:
+
+* Ecommerce Analytics
+* Product Analytics
+* Operations Analytics
+* Business Intelligence Analytics
 
 ---
-## Data Cleaning Decision
 
-Placeholder values and missing values were identified during validation.
+## Validation Findings
 
-Examples include:
-
-- Unknown
-- Unbranded/Generic
-- Other
-- Not Applicable
-- Does Not Apply
-- Blank values
-
-No modifications were made at this stage.
-
-### Reason
-
-Dataset documentation does not provide sufficient business rules to determine whether these values represent missing information, valid business categories, or system-generated placeholders.
-
-To preserve data integrity, original values were retained.
-
-Future cleaning actions would require stakeholder clarification or supporting business documentation.
 ### Placeholder Value Investigation
 
-The following values were identified during initial review and are currently under validation:
+The following values were identified during validation:
 
 * Unknown
+* Unbranded/Generic
+* Other
 * Not Applicable
 * Does Not Apply
 * Do Not Apply
 * Not Specified
-* Uncategorized
 * ?
 
-At this stage, these values have not been classified as errors because they may represent:
-
-* Missing information
-* System-generated categories
-* Placeholder values
-* Legitimate business classifications
-
-### Placeholder Value Assessment
-
-Several placeholder values were identified during validation, including:
-
-- Unknown
-- Not Applicable
-- Does Not Apply
-- Do Not Apply
-- Not Specified
-- ?
-
-Business-context review determined that some values represent missing information, while others represent legitimate business categories.
-
-For example:
-
-- Unbranded/Generic was retained as a valid category.
-- Other was retained as a valid product type.
-- Unknown, Not Specified, and MPN placeholder values were classified as missing information for cleaning purposes.
-
-All cleaning actions will be performed on a working copy of the dataset while preserving the original raw dataset.
+These values were reviewed to determine whether they represent missing information, placeholder values, or legitimate business classifications.
 
 ### Missing Value Investigation
 
-The UPC field contains a substantial number of blank values.
+Several columns contain blank values, including:
 
-A manual review of sampled records indicated that products remained identifiable through existing Title and Brand information.
+* MPN
+* UPC
+* WasPrice
+* Price Per Channel
+* Seller City
+* Seller State
+* Seller Country
 
-Current assessment suggests that missing UPC values may represent unavailable product identifiers rather than invalid records.
+Sample reviews of blank records indicated that products remained identifiable through alternative fields such as:
 
-No records have been removed.
+* Title
+* Brand
+* Product Type
 
-Further validation is required before determining any cleaning actions.
-
----
-
-### Missing Value Assessment
-
-Validation activities performed:
-
-* Blank-cell assessment initiated
-* Placeholder value frequency assessment initiated
-* Selected business-critical fields under review
-
-#### Brand Field Review
-
-* Brand field reviewed.
-* No blank cells identified within active dataset records (Rows 2–863).
-* Unknown and Unbranded/Generic values are being assessed separately from blank cells.
-
-#### MPN Field Review
-
-* MPN field currently undergoing missing-value validation.
-* Blank-cell count results are under verification before conclusions are made.
-* Placeholder values such as "Not Applicable" and "Does Not Apply" are being assessed separately from blank cells.
-
-### Boolean Validation
-
-Initial review indicates selected feature fields are consistently represented using binary indicators (0 and 1).
+Based on current validation, blank values do not automatically render records unusable.
 
 ### Numeric Validation
 
-Initial review indicates selected pricing, sales, and inventory metrics are stored as numeric values. Further validation may be performed during data cleaning.
----
+Selected pricing, sales, inventory, and revenue-related fields were reviewed.
 
-### Duplicate Assessment
+Initial validation confirmed that reviewed fields contain numeric values consistent with their intended business purpose.
 
-Duplicate-record validation was performed using a combination of Title, Brand, MPN, and UPC fields.
+### Boolean Validation
 
-Initial assessment indicates reviewed records are unique and no duplicate records were identified during validation.
+Selected smart-device feature fields were reviewed.
 
-Repeated field names observed within the dataset appear to represent duplicated columns or dataset design choices rather than duplicate records.
+Reviewed fields consistently use binary indicators (0 and 1) and no conflicting value formats were identified during validation.
 
-No records have been removed.
+### Duplicate Record Assessment
 
-### Current Validation Scope
+Duplicate-record validation was performed using combinations of:
 
-The following validation activities are being performed:
+* Title
+* Brand
+* MPN
+* UPC
 
-* Business context validation
+No duplicate records were identified during the validation process.
 
----
-
-### Cleaning Status
-
-* No cleaning actions have been performed.
-* No records have been modified.
-* No records have been deleted.
-* No transformations have been applied.
-* Validation activities must be completed before any cleaning decisions are made.
+Repeated field names observed within the dataset appear to be duplicated columns or dataset-design choices rather than duplicated records.
 
 ---
-
-### Investigation Status
-
-Current activities remain limited to:
-
-* Dataset familiarization
-* Data structure review
-* Data type assessment
-* Missing value investigation
-* Placeholder value investigation
-* Duplicate investigation
-* Business context understanding
-
-Observed:
-- Unknown values in Brand field
-- Not Applicable values in MPN field
-- Blank UPC values
-
-Decision:
-No modifications made due to lack of business rules from data owner.
-
-Rationale:
-
 
 ## Data Integrity Decision
 
 Placeholder values, blank cells, and missing information were identified during validation.
 
-Examples included:
+Examples include:
 
-- Unknown
-- Unbranded/Generic
-- Other
-- Not Applicable
-- Does Not Apply
+* Unknown
+* Unbranded/Generic
+* Other
+* Not Applicable
+* Does Not Apply
+* Blank values
 
-A decision was made not to alter, replace, or remove these values.
+No values have been altered, replaced, removed, or standardized at this stage.
 
-Rationale:
+### Rationale
 
-Without business rules or stakeholder guidance, modifying these values could introduce assumptions and compromise data integrity.
+Dataset documentation does not provide sufficient business rules to determine whether these values represent:
 
-The dataset has therefore been preserved in its original state while all observations and validation activities have been documented.
-Altering these values could introduce assumptions not supported by source documentation.
-All observations remain subject to validation before any cleaning, transformation, analysis, or business conclusions are generated.
+* Missing information
+* Valid business classifications
+* System-generated placeholders
+
+To preserve data integrity and avoid introducing unsupported assumptions, original dataset values have been retained.
+
+Future cleaning actions, if required, should be supported by stakeholder guidance, business rules, or additional dataset documentation.
+
+---
+
+## Cleaning Status
+
+Current Status:
+
+* No records modified
+* No records deleted
+* No records transformed
+* No values standardized
+* Original dataset preserved
+
+All observations and validation findings remain documented for transparency and auditability.
