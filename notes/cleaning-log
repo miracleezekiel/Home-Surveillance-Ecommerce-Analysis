@@ -14,7 +14,7 @@ The raw dataset will remain unchanged throughout the project.
 
 ## Cleaning Session 1
 
-Date: 2026-06-07
+
 
 Objective:
 
@@ -80,6 +80,27 @@ Reason:
 Available supporting fields indicate the value is a typographical variation of Ring rather than a distinct brand.
 
 ---
+### Placeholder Value Review
+
+Record:
+Row 514
+
+Field:
+Product Type
+
+Observed Value:
+?
+
+Context:
+Product title references a Digital Video Recorder and primary category is Surveillance DVRs & NVRs.
+
+Decision:
+No modification performed.
+
+Reason:
+Product classification can be reasonably inferred but cannot be verified from available dataset documentation.
+
+Original value retained to preserve data integrity.
 
 ### Product Type Review
 
