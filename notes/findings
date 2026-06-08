@@ -190,6 +190,24 @@ Findings:
 
 At this stage, no repeated columns have been removed from the dataset.
 
+### Structural Audit Update
+
+Additional validation was performed on repeated column groups.
+
+Findings indicate that not all repeated field names represent duplicated data.
+
+Validation identified:
+
+* Matching values for Title, Brand, Product Type, Primary Category, Smart Home Ecosystem, Brand Tier, and Condition.
+* Differing values for MPN, UPC, and Condition Score fields.
+
+These results suggest that portions of the dataset may contain alternative identifiers or additional business metrics despite sharing similar field names.
+
+No repeated columns have been removed.
+
+All column-retention decisions are being documented to preserve analytical transparency.
+
+
 Further validation is required to determine whether the observed differences represent data quality issues, alternate identifiers, or dataset design choices.
 
 
