@@ -176,3 +176,20 @@ Current Status:
 
 All observations and validation findings remain documented for transparency and auditability.
 
+
+### Dataset Structure Validation
+
+Repeated column groups were investigated to determine whether they represented duplicated information.
+
+Findings:
+
+* Title columns (A and U) contained matching values in reviewed records.
+* Brand columns (B and V) contained matching values in reviewed records.
+* MPN columns (C and W) showed differences requiring additional investigation.
+* UPC columns (D and X) showed differences requiring additional investigation.
+
+At this stage, no repeated columns have been removed from the dataset.
+
+Further validation is required to determine whether the observed differences represent data quality issues, alternate identifiers, or dataset design choices.
+
+
