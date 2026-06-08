@@ -149,4 +149,18 @@ Under Review
 Reason:
 Although supporting fields suggest a likely product classification, dataset documentation does not currently provide sufficient business rules to justify replacing the value.
 
+### Dataset Structure Review
+
+Issue:
+Condition Score appears twice within the dataset structure.
+
+Finding:
+Sample validation identified materially different values between the two columns.
+
+Decision:
+No modifications performed.
+
+Reason:
+Available evidence does not support treating the columns as duplicates. Dataset documentation is unavailable and the original structure has been preserved.
+
 No modification has been performed at this stage.
