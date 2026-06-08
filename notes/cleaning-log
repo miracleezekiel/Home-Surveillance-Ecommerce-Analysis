@@ -92,6 +92,30 @@ Validation Performed:
 * Brand reviewed.
 * Primary Category reviewed.
 
+## Cleaning Decision Log
+
+### Structural Validation Review
+
+Issue Identified:
+
+- Column J and Column AD share the same header name (condition_score).
+
+Validation Findings:
+
+- Sampled records showed substantially different values between the two columns.
+- No evidence currently supports treating the columns as duplicates.
+
+Decision:
+
+- No renaming performed.
+- No column removal performed.
+- Original dataset structure retained.
+
+Reason:
+
+Dataset documentation does not provide sufficient information to determine whether the repeated header represents a labeling issue, feature-engineering output, or an intentional dataset design choice.
+
+The original structure has been preserved to maintain data integrity.
 Evidence:
 
 * Product title identifies the product as a Digital Video Recorder.
