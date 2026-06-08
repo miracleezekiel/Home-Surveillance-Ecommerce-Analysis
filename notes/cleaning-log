@@ -163,4 +163,51 @@ No modifications performed.
 Reason:
 Available evidence does not support treating the columns as duplicates. Dataset documentation is unavailable and the original structure has been preserved.
 
+### Product Type Standardization
+
+Field:
+Product Type
+
+Issue Type:
+Naming Inconsistency
+
+Original Values:
+
+* Bullet Or Dome
+* Bullet/ Dome For Option!
+
+Standardized Value:
+
+* Bullet / Dome
+
+Validation:
+Product titles and category review confirmed that all values represent the same Bullet/Dome camera category.
+
+Action Taken:
+Values standardized within WORKING_DATA.
+
+RAW_DATA preserved unchanged.
+
+---
+
+Field:
+Product Type
+
+Issue Type:
+Singular/Plural Naming Inconsistency
+
+Original Value:
+CCTV Cameras
+
+Standardized Value:
+CCTV Camera
+
+Validation:
+Product titles and category review confirmed that both values represent the same product type.
+
+Action Taken:
+Value standardized within WORKING_DATA.
+
+RAW_DATA preserved unchanged.
+
 No modification has been performed at this stage.
