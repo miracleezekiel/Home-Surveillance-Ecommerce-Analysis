@@ -220,3 +220,28 @@ All cleaning decisions will be documented and justified before implementation.
 * Business insights
 * Project documentation
 * GitHub portfolio project
+
+## Dataset Structure Validation
+
+Repeated field names were identified during dataset validation.
+
+Validation revealed that some repeated field names contain identical values, while others contain different values.
+
+Examples include:
+
+- Title (A/U)
+- Brand (B/V)
+- Product Type (E/Y)
+- Primary Category (F/Z)
+- Smart Home Ecosystem (G/AA)
+- Brand Tier (H/AB)
+- Condition (I/AC)
+
+Additional validation showed that:
+
+- MPN (C/W) contain differing values.
+- UPC (D/X) contain differing values.
+
+Further structural review was performed before any cleaning decisions were made.
+
+No columns were removed during validation.
