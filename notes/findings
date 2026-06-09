@@ -253,6 +253,24 @@ Initial descriptive statistics indicate a non-uniform distribution across pricin
 - Median Price: $73.13
 - Maximum Price: $1,499.99
 
+
+
+## KPI Development
+
+Key ecommerce performance indicators were developed to support business analysis.
+
+KPIs include:
+
+- Total Products
+- Total Units Sold
+- Total Inventory Available
+- Average Product Price
+- Average Discount Percentage
+- Total Savings USD
+- Estimated Revenue
+
+These metrics provide a high-level overview of marketplace performance before detailed analysis and SQL querying.
+
 The difference between average and median prices suggests the presence of higher-priced products influencing the overall distribution.
 
 ### Sales
