@@ -243,6 +243,33 @@ Brand X generated the highest units sold.
 
 Descriptive statistics analysis has commenced.
 
+## Descriptive Statistics Findings
+
+Initial descriptive statistics indicate a non-uniform distribution across pricing and sales metrics.
+
+### Pricing
+
+- Average Price: $117.12
+- Median Price: $73.13
+- Maximum Price: $1,499.99
+
+The difference between average and median prices suggests the presence of higher-priced products influencing the overall distribution.
+
+### Sales
+
+- Average Units Sold: 252.57
+- Median Units Sold: 41
+- Maximum Units Sold: 10,872
+
+Sales activity appears concentrated among a relatively small number of high-performing products.
+
+### Discounts
+
+- Average Discount Percentage: 5.50%
+- Median Discount Percentage: 0%
+
+A large portion of products do not appear to be discounted.
+
 Metrics under review:
 
 - Price
