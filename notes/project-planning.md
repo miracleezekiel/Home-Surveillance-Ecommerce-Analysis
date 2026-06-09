@@ -261,16 +261,21 @@ Additional validation showed that:
 
 Further structural review was performed before any cleaning decisions were made.
 
-Current Stage: Data Exploration
+## Current Stage
 
-Completed:
-- Validation
-- Cleaning
+Data Exploration
+
+### Completed
+
+- Dataset Validation
+- Data Cleaning
 - Data Quality Assessment
 
-In Progress:
-- KPI Development
-- Pivot Table Analysis
+### In Progress
+
 - Descriptive Statistics
+- KPI Development
+- Revenue Analysis
+- Inventory Analysis
 
 No columns were removed during validation.
