@@ -259,6 +259,24 @@ Initial descriptive statistics indicate a non-uniform distribution across pricin
 
 Key ecommerce performance indicators were developed to support business analysis.
 
+## Revenue Metric Development
+
+To support ecommerce performance analysis, a new calculated field named `estimated_revenue` was created in the Working_Data sheet.
+
+Formula:
+
+Estimated Revenue = Price × Units Sold
+
+The field was added to allow revenue-focused analysis including:
+
+- Revenue by Brand
+- Revenue by Product Type
+- Revenue by Category
+- Top Revenue Products
+- Revenue Distribution Analysis
+
+The calculated field was created in the working copy of the dataset while preserving the original raw dataset.
+
 KPIs include:
 
 - Total Products
