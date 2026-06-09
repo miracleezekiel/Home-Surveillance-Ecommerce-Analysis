@@ -61,6 +61,23 @@ The project aims to:
 
 ---
 
+### Numeric Range Review
+
+Key numeric fields were reviewed using minimum and maximum value checks.
+
+Fields reviewed:
+
+- Price
+- Sold
+- Available
+- Discount Percentage
+- Savings USD
+
+No negative values, impossible values, or obvious outliers were identified.
+
+The reviewed fields appear suitable for exploratory analysis and SQL-based investigation.
+
+
 ## Dataset Overview
 
 The dataset contains information related to:
