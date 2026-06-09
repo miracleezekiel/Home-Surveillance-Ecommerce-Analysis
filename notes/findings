@@ -190,6 +190,20 @@ Findings:
 
 At this stage, no repeated columns have been removed from the dataset.
 
+### Numeric Validation Findings
+
+Numeric range validation was performed on pricing, inventory, sales, discount, and savings-related fields.
+
+Results indicated:
+
+- No negative values
+- No impossible percentages
+- No obvious outliers requiring correction
+
+The dataset appears internally consistent for the reviewed numeric fields.
+
+No modifications were required.
+
 ### Structural Audit Update
 
 Additional validation was performed on repeated column groups.
