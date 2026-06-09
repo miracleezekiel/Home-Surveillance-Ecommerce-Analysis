@@ -239,4 +239,17 @@ Top-selling brand identified.
 
 Brand X generated the highest units sold.
 
+## Data Exploration
+
+Descriptive statistics analysis has commenced.
+
+Metrics under review:
+
+- Price
+- Sold
+- Available
+- Discount Percentage
+- Savings USD
+
+The objective is to understand overall pricing structure, inventory availability, sales distribution, and discount patterns before conducting SQL analysis.
 Further analysis underway.
