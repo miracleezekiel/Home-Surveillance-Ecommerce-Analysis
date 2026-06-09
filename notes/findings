@@ -202,6 +202,15 @@ Results indicated:
 
 The dataset appears internally consistent for the reviewed numeric fields.
 
+
+### Discount and Savings Review
+
+Zero values were identified within Discount Percentage and Savings USD fields.
+
+Review indicated these values represent products without active discounts rather than missing information.
+
+No modifications were performed.
+
 No modifications were required.
 
 ### Structural Audit Update
