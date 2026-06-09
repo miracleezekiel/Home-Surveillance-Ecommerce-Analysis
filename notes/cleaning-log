@@ -210,4 +210,27 @@ Value standardized within WORKING_DATA.
 
 RAW_DATA preserved unchanged.
 
+
+
+## Geographic Review
+
+Seller geographic fields were reviewed for consistency.
+
+Findings included:
+
+- State abbreviations and full state names (TX/Texas, FL/Florida, CA/California)
+- Multiple representations of United States in Seller Country
+- Capitalization inconsistencies within Seller City values
+
+Cleaning Actions Performed:
+
+- City Of Industry → City of Industry
+- Multiple locations → Multiple Locations
+
+No changes were made to state or country values.
+
+Reason:
+
+Business rules and geographic reference documentation were unavailable. Source-system values were retained to preserve data integrity and maintain traceability.
+
 No modification has been performed at this stage.
