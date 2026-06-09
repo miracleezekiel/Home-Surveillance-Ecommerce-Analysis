@@ -316,3 +316,15 @@ Metrics under review:
 
 The objective is to understand overall pricing structure, inventory availability, sales distribution, and discount patterns before conducting SQL analysis.
 Further analysis underway.
+
+### Revenue KPI
+
+Estimated Revenue was calculated as:
+
+Revenue = Price × Units Sold
+
+Key Finding:
+
+- Total Estimated Revenue: $11,677,296.20
+
+This metric will serve as the primary business performance indicator for subsequent product, category, brand, and seller analysis.
