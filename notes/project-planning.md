@@ -270,6 +270,7 @@ Data Exploration
 - Dataset Validation
 - Data Cleaning
 - Data Quality Assessment
+- Revenue metric creation (Estimated Revenue)
 
 ### In Progress
 
