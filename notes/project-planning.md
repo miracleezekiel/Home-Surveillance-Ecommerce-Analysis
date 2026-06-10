@@ -280,3 +280,21 @@ Data Exploration
 - Inventory Analysis
 
 No columns were removed during validation.
+
+
+
+## Exploratory Data Analysis Completed
+
+The following exploratory analyses were completed:
+
+- Descriptive Statistics
+- KPI Development
+- Revenue Analysis by Brand
+- Revenue Analysis by Product Type
+- Revenue Analysis by Primary Category
+- Revenue Analysis by Seller
+- Revenue Analysis by Smart Home Ecosystem
+- Units Sold Analysis by Brand
+- Inventory Analysis by Brand
+
+Exploratory analysis findings were documented prior to SQL analysis.
