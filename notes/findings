@@ -228,6 +228,26 @@ These results suggest that portions of the dataset may contain alternative ident
 
 No repeated columns have been removed.
 
+## Pivot Table Analysis
+
+Revenue-based pivot tables were created to evaluate performance across multiple business dimensions.
+
+Analysis dimensions included:
+
+- Brand
+- Primary Category
+- Product Type
+- Seller
+- Smart Home Ecosystem
+
+All pivot tables reconciled to the same estimated revenue total:
+
+$11,677,296.20
+
+This confirms that revenue aggregation remained consistent across all analytical views.
+
+Detailed business findings will be documented following interpretation of each pivot table.
+
 ## Pivot Table Findings
 
 ### Revenue by Brand
