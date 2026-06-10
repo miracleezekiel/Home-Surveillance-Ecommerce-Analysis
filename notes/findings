@@ -228,6 +228,36 @@ These results suggest that portions of the dataset may contain alternative ident
 
 No repeated columns have been removed.
 
+## Pivot Table Findings
+
+### Revenue by Brand
+
+Revenue analysis identified Eufy as the highest revenue-generating brand, followed by Annke, Zosi, and Sannce.
+
+Placeholder brand values such as "Unknown" and "Unbranded/Generic" contributed meaningful revenue, supporting the earlier decision to preserve these records during data cleaning.
+
+### Revenue by Primary Category
+
+IP/Smart Camera Systems generated the highest estimated revenue, followed by Security Cameras.
+
+These findings suggest that smart surveillance products represent the dominant revenue source within the dataset.
+
+### Revenue by Product Type
+
+Camera and Bullet Camera products generated the largest share of revenue.
+
+Complete surveillance systems also contributed significantly to overall revenue performance.
+
+### Revenue by Seller
+
+Revenue distribution was concentrated among a relatively small group of sellers, with Seller_4 generating the highest estimated revenue.
+
+### Revenue by Smart Home Ecosystem
+
+Products classified as Other/Generic generated the largest share of revenue, followed by the Eufy ecosystem.
+
+This suggests a substantial portion of products operate independently of major smart-home platforms or were categorized using generic ecosystem labels.
+
 All column-retention decisions are being documented to preserve analytical transparency.
 
 
