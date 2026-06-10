@@ -378,3 +378,31 @@ Key Finding:
 - Total Estimated Revenue: $11,677,296.20
 
 This metric will serve as the primary business performance indicator for subsequent product, category, brand, and seller analysis.
+## Inventory and Demand Analysis
+
+### Units Sold by Brand
+
+Analysis of units sold indicates that product demand is concentrated among a relatively small group of brands.
+
+Brands including Eufy, Annke, Sannce, Unknown, and Unbranded/Generic contributed a significant share of total unit sales.
+
+### Available Inventory by Brand
+
+Inventory analysis indicates that Annke and Eufy maintain the highest inventory levels within the dataset.
+
+Additional inventory is concentrated among brands such as Lorex, Sannce, Ring, and Reolink.
+
+### Demand and Inventory Observation
+
+Several high-performing brands appear in both the top-selling and top-inventory groups.
+
+This suggests that inventory allocation may be partially aligned with product demand.
+
+Further analysis would be required to determine whether current inventory levels are sufficient to support future sales activity.
+### Sales Volume Observation
+
+Eufy recorded the highest unit sales volume, followed by Annke and Sannce.
+
+Comparison of revenue and unit sales rankings indicates that several leading revenue-generating brands also rank among the highest-volume sellers.
+
+This suggests that revenue performance is driven primarily by product demand rather than isolated high-priced transactions.
