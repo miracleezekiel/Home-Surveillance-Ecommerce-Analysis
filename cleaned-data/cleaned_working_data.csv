@@ -1,1 +1,24 @@
+# Cleaned Dataset
+
+This folder contains the SQL-ready version of the Home Surveillance Ecommerce dataset used for analysis.
+
+## Dataset Preparation
+
+The dataset was cleaned, validated, and reviewed before export.
+
+Actions performed include:
+
+* Text standardization review
+* Duplicate field validation
+* Product type review
+* Geographic review
+* Missing value assessment
+* Revenue metric creation
+* SQL export preparation
+
+## File
+
+cleaned_working_data.csv
+
+This file was exported from the validated Working_Data worksheet and used for MySQL business analysis.
 
