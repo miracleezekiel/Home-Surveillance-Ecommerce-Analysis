@@ -234,3 +234,12 @@ Reason:
 Business rules and geographic reference documentation were unavailable. Source-system values were retained to preserve data integrity and maintain traceability.
 
 No modification has been performed at this stage.
+## SQL Dataset Preparation
+
+A dedicated SQL-ready dataset was created from the validated Working_Data sheet.
+
+Confirmed duplicate structural fields were excluded from the SQL export version to ensure compatibility with relational database requirements.
+
+Alternate MPN, UPC, and Condition Score fields were retained and renamed to preserve information while maintaining unique column names.
+
+The SQL-ready dataset was exported as CSV and imported into MySQL Workbench for business analysis.
