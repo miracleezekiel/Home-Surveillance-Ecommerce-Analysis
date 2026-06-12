@@ -1,408 +1,255 @@
-# Findings
+# Findings & Business Insights
 
-## Project Status
+## Project Overview
 
-**Current Stage:** Validation and Data Quality Assessment
-
-### Completed Activities
-
-* Dataset familiarization
-* Initial dataset structure assessment
-* Data type assessment
-* Business context review
-* Placeholder value investigation
-* Missing value assessment
-* Numeric field validation
-* Boolean field validation
-* Duplicate record assessment
-
-### Current Activity
-
-* Data quality assessment
-* Documentation of validation findings
-* Preparation for data cleaning decisions
-
-No business insights or performance conclusions have been generated at this stage.
+This project analyzed 862 home surveillance and smart security product listings to identify revenue drivers, demand patterns, inventory trends, seller performance, and product category opportunities within the home surveillance e-commerce market.
 
 ---
 
-## Initial Dataset Assessment
+# Executive Summary
 
-The dataset contains ecommerce product listing, inventory, pricing, sales, seller, shipping, and smart-device feature information related to home surveillance and smart security products.
+The analysis revealed that revenue and demand are concentrated among a relatively small number of brands, product categories, and sellers.
 
-The dataset includes:
+Smart surveillance products generated the largest share of marketplace revenue, while several leading brands consistently appeared among the top performers across revenue, sales volume, and inventory availability.
 
-* Product identification fields
-* Product classification fields
-* Pricing and discount metrics
-* Inventory and demand indicators
-* Revenue-related metrics
-* Smart-device feature indicators
-* Seller and geographic information
-* Shipping reach and operational metrics
-
-The dataset structure supports:
-
-* Ecommerce Analytics
-* Product Analytics
-* Operations Analytics
-* Business Intelligence Analytics
+The findings suggest that product demand, category positioning, and seller reach are major contributors to marketplace performance.
 
 ---
 
-## Validation Findings
+# Key Performance Indicators
 
-### Placeholder Value Investigation
+| KPI                     | Value          |
+| ----------------------- | -------------- |
+| Total Products          | 862            |
+| Total Estimated Revenue | $11,677,296.20 |
+| Average Product Price   | $117.12        |
+| Median Product Price    | $73.13         |
+| Average Units Sold      | 252.57         |
+| Median Units Sold       | 41             |
+| Maximum Product Price   | $1,499.99      |
+| Maximum Units Sold      | 10,872         |
 
-The following values were identified during validation:
+---
 
+# Revenue Analysis
+
+## Revenue by Brand
+
+Revenue performance was concentrated among a small group of brands.
+
+Top-performing brands included:
+
+* Eufy
+* Annke
+* Zosi
+* Sannce
+
+Observation:
+
+Brands generating the highest revenue also demonstrated strong sales activity and product availability, indicating sustained market demand.
+
+---
+
+## Revenue by Product Category
+
+The highest revenue-generating categories were:
+
+1. IP / Smart Camera Systems
+2. Security Cameras
+
+Observation:
+
+Consumers appear to favor connected surveillance products and smart-security solutions over traditional surveillance equipment.
+
+---
+
+## Revenue by Product Type
+
+The strongest-performing product types included:
+
+* Camera
+* Bullet Camera
+* Complete Surveillance Systems
+
+Observation:
+
+Core surveillance hardware remains the primary revenue driver within the marketplace.
+
+---
+
+## Revenue by Seller
+
+Revenue generation was concentrated among a relatively small group of sellers.
+
+Key Observation:
+
+Seller_4 generated the highest estimated revenue within the dataset.
+
+This suggests that marketplace performance may be heavily influenced by a limited number of dominant sellers.
+
+---
+
+## Revenue by Smart Home Ecosystem
+
+Top-performing ecosystems included:
+
+* Other / Generic
+* Eufy
+
+Observation:
+
+A substantial portion of products operate independently of major smart-home ecosystems or are categorized under generic ecosystem classifications.
+
+---
+
+# Demand Analysis
+
+## Units Sold by Brand
+
+Demand was concentrated among:
+
+* Eufy
+* Annke
+* Sannce
 * Unknown
-* Unbranded/Generic
-* Other
-* Not Applicable
-* Does Not Apply
-* Do Not Apply
-* Not Specified
-* ?
+* Unbranded / Generic
 
-These values were reviewed to determine whether they represent missing information, placeholder values, or legitimate business classifications.
+Observation:
 
-### Missing Value Investigation
+Several brands demonstrated strong product demand despite not being premium-priced products.
 
-Several columns contain blank values, including:
-
-* MPN
-* UPC
-* WasPrice
-* Price Per Channel
-* Seller City
-* Seller State
-* Seller Country
-
-Sample reviews of blank records indicated that products remained identifiable through alternative fields such as:
-
-* Title
-* Brand
-* Product Type
-
-Based on current validation, blank values do not automatically render records unusable.
-
-### Numeric Validation
-
-Selected pricing, sales, inventory, and revenue-related fields were reviewed.
-
-Initial validation confirmed that reviewed fields contain numeric values consistent with their intended business purpose.
-
-### Boolean Validation
-
-Selected smart-device feature fields were reviewed.
-
-Reviewed fields consistently use binary indicators (0 and 1) and no conflicting value formats were identified during validation.
-
-### Duplicate Record Assessment
-
-Duplicate-record validation was performed using combinations of:
-
-* Title
-* Brand
-* MPN
-* UPC
-
-No duplicate records were identified during the validation process.
-
-Repeated field names observed within the dataset appear to be duplicated columns or dataset-design choices rather than duplicated records.
+This suggests that value, availability, and product positioning may significantly influence sales performance.
 
 ---
 
-## Data Integrity Decision
-
-Placeholder values, blank cells, and missing information were identified during validation.
-
-Examples include:
-
-* Unknown
-* Unbranded/Generic
-* Other
-* Not Applicable
-* Does Not Apply
-* Blank values
-
-No values have been altered, replaced, removed, or standardized at this stage.
-
-### Rationale
-
-Dataset documentation does not provide sufficient business rules to determine whether these values represent:
-
-* Missing information
-* Valid business classifications
-* System-generated placeholders
-
-To preserve data integrity and avoid introducing unsupported assumptions, original dataset values have been retained.
-
-Future cleaning actions, if required, should be supported by stakeholder guidance, business rules, or additional dataset documentation.
-
-## Cleaning Progress
-
-### Completed Cleaning Actions
-
-1. Brand Standardization
-
-Issue:
-A brand value of "Rin.G" was identified during validation.
-
-Action:
-The value was standardized to "Ring" in the Working_Data sheet.
-
-Justification:
-Supporting fields including Product Title and Smart Home Ecosystem consistently referenced Ring products.
-
-Result:
-The value was determined to be a typographical variation rather than a separate brand.
-
-Raw dataset preserved unchanged.
-
-
----
-
-## Cleaning Status
-
-Current Status:
-
-* No records modified
-* No records deleted
-* No records transformed
-* No values standardized
-* Original dataset preserved
-
-All observations and validation findings remain documented for transparency and auditability.
-
-
-### Dataset Structure Validation
-
-Repeated column groups were investigated to determine whether they represented duplicated information.
-
-Findings:
-
-* Title columns (A and U) contained matching values in reviewed records.
-* Brand columns (B and V) contained matching values in reviewed records.
-* MPN columns (C and W) showed differences requiring additional investigation.
-* UPC columns (D and X) showed differences requiring additional investigation.
-
-At this stage, no repeated columns have been removed from the dataset.
-
-### Numeric Validation Findings
-
-Numeric range validation was performed on pricing, inventory, sales, discount, and savings-related fields.
-
-Results indicated:
-
-- No negative values
-- No impossible percentages
-- No obvious outliers requiring correction
-
-The dataset appears internally consistent for the reviewed numeric fields.
-
-
-### Discount and Savings Review
-
-Zero values were identified within Discount Percentage and Savings USD fields.
-
-Review indicated these values represent products without active discounts rather than missing information.
-
-No modifications were performed.
-
-No modifications were required.
-
-### Structural Audit Update
-
-Additional validation was performed on repeated column groups.
-
-Findings indicate that not all repeated field names represent duplicated data.
-
-Validation identified:
-
-* Matching values for Title, Brand, Product Type, Primary Category, Smart Home Ecosystem, Brand Tier, and Condition.
-* Differing values for MPN, UPC, and Condition Score fields.
-
-These results suggest that portions of the dataset may contain alternative identifiers or additional business metrics despite sharing similar field names.
-
-No repeated columns have been removed.
-
-## Pivot Table Analysis
-
-Revenue-based pivot tables were created to evaluate performance across multiple business dimensions.
-
-Analysis dimensions included:
-
-- Brand
-- Primary Category
-- Product Type
-- Seller
-- Smart Home Ecosystem
-
-All pivot tables reconciled to the same estimated revenue total:
-
-$11,677,296.20
-
-This confirms that revenue aggregation remained consistent across all analytical views.
-
-Detailed business findings will be documented following interpretation of each pivot table.
-
-## Pivot Table Findings
-
-### Revenue by Brand
-
-Revenue analysis identified Eufy as the highest revenue-generating brand, followed by Annke, Zosi, and Sannce.
-
-Placeholder brand values such as "Unknown" and "Unbranded/Generic" contributed meaningful revenue, supporting the earlier decision to preserve these records during data cleaning.
-
-### Revenue by Primary Category
-
-IP/Smart Camera Systems generated the highest estimated revenue, followed by Security Cameras.
-
-These findings suggest that smart surveillance products represent the dominant revenue source within the dataset.
-
-### Revenue by Product Type
-
-Camera and Bullet Camera products generated the largest share of revenue.
-
-Complete surveillance systems also contributed significantly to overall revenue performance.
-
-### Revenue by Seller
-
-Revenue distribution was concentrated among a relatively small group of sellers, with Seller_4 generating the highest estimated revenue.
-
-### Revenue by Smart Home Ecosystem
-
-Products classified as Other/Generic generated the largest share of revenue, followed by the Eufy ecosystem.
-
-This suggests a substantial portion of products operate independently of major smart-home platforms or were categorized using generic ecosystem labels.
-
-All column-retention decisions are being documented to preserve analytical transparency.
-
-
-Further validation is required to determine whether the observed differences represent data quality issues, alternate identifiers, or dataset design choices.
-
-
-
-Top-selling brand identified.
-
-Brand X generated the highest units sold.
-
-## Data Exploration
-
-Descriptive statistics analysis has commenced.
-
-## Descriptive Statistics Findings
-
-Initial descriptive statistics indicate a non-uniform distribution across pricing and sales metrics.
-
-### Pricing
-
-- Average Price: $117.12
-- Median Price: $73.13
-- Maximum Price: $1,499.99
-
-
-
-## KPI Development
-
-Key ecommerce performance indicators were developed to support business analysis.
-
-## Revenue Metric Development
-
-To support ecommerce performance analysis, a new calculated field named `estimated_revenue` was created in the Working_Data sheet.
-
-Formula:
-
-Estimated Revenue = Price × Units Sold
-
-The field was added to allow revenue-focused analysis including:
-
-- Revenue by Brand
-- Revenue by Product Type
-- Revenue by Category
-- Top Revenue Products
-- Revenue Distribution Analysis
-
-The calculated field was created in the working copy of the dataset while preserving the original raw dataset.
-
-KPIs include:
-
-- Total Products
-- Total Units Sold
-- Total Inventory Available
-- Average Product Price
-- Average Discount Percentage
-- Total Savings USD
-- Estimated Revenue
-
-These metrics provide a high-level overview of marketplace performance before detailed analysis and SQL querying.
-
-The difference between average and median prices suggests the presence of higher-priced products influencing the overall distribution.
-
-### Sales
-
-- Average Units Sold: 252.57
-- Median Units Sold: 41
-- Maximum Units Sold: 10,872
-
-Sales activity appears concentrated among a relatively small number of high-performing products.
-
-### Discounts
-
-- Average Discount Percentage: 5.50%
-- Median Discount Percentage: 0%
-
-A large portion of products do not appear to be discounted.
-
-Metrics under review:
-
-- Price
-- Sold
-- Available
-- Discount Percentage
-- Savings USD
-
-The objective is to understand overall pricing structure, inventory availability, sales distribution, and discount patterns before conducting SQL analysis.
-Further analysis underway.
-
-### Revenue KPI
-
-Estimated Revenue was calculated as:
-
-Revenue = Price × Units Sold
+## Sales Distribution
 
 Key Finding:
 
-- Total Estimated Revenue: $11,677,296.20
+The gap between average units sold and median units sold indicates that sales activity is concentrated among a relatively small number of high-performing products.
 
-This metric will serve as the primary business performance indicator for subsequent product, category, brand, and seller analysis.
-## Inventory and Demand Analysis
+Observation:
 
-### Units Sold by Brand
+A small percentage of products account for a disproportionately large share of marketplace sales.
 
-Analysis of units sold indicates that product demand is concentrated among a relatively small group of brands.
+---
 
-Brands including Eufy, Annke, Sannce, Unknown, and Unbranded/Generic contributed a significant share of total unit sales.
+# Inventory Analysis
 
-### Available Inventory by Brand
+## Available Inventory by Brand
 
-Inventory analysis indicates that Annke and Eufy maintain the highest inventory levels within the dataset.
+Brands maintaining the highest inventory levels included:
 
-Additional inventory is concentrated among brands such as Lorex, Sannce, Ring, and Reolink.
+* Annke
+* Eufy
+* Lorex
+* Sannce
+* Ring
+* Reolink
 
-### Demand and Inventory Observation
+Observation:
 
-Several high-performing brands appear in both the top-selling and top-inventory groups.
+Inventory allocation appears generally aligned with marketplace demand.
 
-This suggests that inventory allocation may be partially aligned with product demand.
+Brands generating strong sales volumes also maintain larger inventory positions.
 
-Further analysis would be required to determine whether current inventory levels are sufficient to support future sales activity.
-### Sales Volume Observation
+---
 
-Eufy recorded the highest unit sales volume, followed by Annke and Sannce.
+## Demand vs Inventory
 
-Comparison of revenue and unit sales rankings indicates that several leading revenue-generating brands also rank among the highest-volume sellers.
+Observation:
 
-This suggests that revenue performance is driven primarily by product demand rather than isolated high-priced transactions.
+Several brands appeared in both the highest-selling and highest-inventory groups.
+
+This suggests sellers are actively maintaining inventory for products with proven demand.
+
+---
+
+# Pricing Analysis
+
+## Product Pricing
+
+Key Findings:
+
+* Average Price: $117.12
+* Median Price: $73.13
+* Maximum Price: $1,499.99
+
+Observation:
+
+The large difference between average and median price indicates the presence of premium products that elevate overall pricing averages.
+
+---
+
+## Discount Analysis
+
+Key Findings:
+
+* Average Discount Rate: 5.50%
+* Median Discount Rate: 0%
+
+Observation:
+
+Most products are sold without significant discounting.
+
+Revenue generation appears to be driven more by product demand than aggressive promotional pricing.
+
+---
+
+# Business Insights
+
+### Insight 1
+
+Smart surveillance products dominate marketplace revenue and represent the strongest-performing category.
+
+### Insight 2
+
+Revenue and sales activity are concentrated among a relatively small number of brands.
+
+### Insight 3
+
+Eufy and Annke consistently rank among the strongest performers across revenue, sales volume, and inventory availability.
+
+### Insight 4
+
+Most products are sold without substantial discounts, suggesting that pricing pressure is relatively limited.
+
+### Insight 5
+
+Inventory allocation generally aligns with demand, indicating effective stock positioning among leading brands.
+
+### Insight 6
+
+A small number of products generate a disproportionately large share of marketplace sales and revenue.
+
+---
+
+# Business Recommendations
+
+### Recommendation 1
+
+Increase focus on smart surveillance products and connected camera systems.
+
+### Recommendation 2
+
+Prioritize inventory investment in high-performing brands such as Eufy and Annke.
+
+### Recommendation 3
+
+Monitor top-selling products closely to prevent stock shortages.
+
+### Recommendation 4
+
+Review high-performing products with low discount levels to identify pricing optimization opportunities.
+
+### Recommendation 5
+
+Further investigate top sellers to identify operational practices contributing to their performance.
+
+---
+
+# Conclusion
+
+The home surveillance marketplace demonstrates strong revenue concentration around smart camera systems, leading brands, and a limited number of high-performing products.
+
+The findings indicate that product demand, inventory positioning, and seller reach are key drivers of marketplace success. Organizations operating within this market can leverage these insights to improve product strategy, inventory planning, pricing decisions, and revenue performance.
