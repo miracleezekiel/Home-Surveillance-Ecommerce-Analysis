@@ -2,244 +2,307 @@
 
 ## Cleaning Philosophy
 
-The project follows a validation-first and data-integrity-first approach.
+This project followed a data-integrity-first approach designed to preserve the reliability and traceability of the original dataset.
 
-Validation activities were completed before any cleaning actions were considered.
+All validation activities were completed before any cleaning or transformation decisions were made.
 
-Where business rules were unavailable, original dataset values were retained to avoid unsupported assumptions.
+The original dataset was preserved throughout the project, and all approved transformations were performed only within the Working_Data environment.
 
-The raw dataset will remain unchanged throughout the project.
+Guiding principles included:
+
+* Preserve original source data
+* Validate before modifying
+* Document all cleaning decisions
+* Avoid unsupported assumptions
+* Maintain analytical transparency
 
 ---
 
-## Cleaning Session 1
+# Data Validation Summary
 
+Before cleaning activities began, the dataset was reviewed for:
 
+* Dataset structure consistency
+* Duplicate records
+* Duplicate fields
+* Missing values
+* Placeholder values
+* Formatting inconsistencies
+* Numeric field validation
+* Geographic field consistency
 
-Objective:
+The validation process ensured that cleaning decisions were supported by available evidence and business context.
 
-Perform initial data-cleaning review focused on formatting consistency, field standardization, and structural assessment.
+---
 
-No records will be deleted during this stage.
+# Cleaning Activities Performed
 
-No placeholder values will be modified without documented justification.
+## Brand Standardization
 
-## Cleaning Review Findings
+### Issue Identified
 
-### Brand Field Review
+A brand value of:
 
-Potential Issue:
-Brand value "Rin.G" identified during formatting review.
+```text
+Rin.G
+```
 
-Validation Performed:
+was identified during the formatting review.
 
-* Product title reviewed.
-* Smart Home Ecosystem reviewed.
-* Product context reviewed.
+### Validation Performed
 
-Evidence:
+The following fields were reviewed:
 
-* Product title contains references to Ring products.
-* Smart Home Ecosystem classified as Ring (Amazon).
-* No evidence found indicating Rin.G represents a separate brand.
+* Product Title
+* Smart Home Ecosystem
+* Product Context
 
-### Brand Field Review
+### Findings
 
-Potential Issue:
-Brand value "Rin.G" identified during formatting review.
+* Product titles referenced Ring products.
+* Smart Home Ecosystem was classified as Ring (Amazon).
+* No evidence suggested Rin.G represented a separate brand.
 
-Validation Performed:
+### Action Taken
 
-* Product title reviewed.
-* Smart Home Ecosystem reviewed.
-* Product context reviewed.
+Standardized:
 
-Evidence:
-
-* Product title contains references to Ring products.
-* Smart Home Ecosystem classified as Ring (Amazon).
-* No evidence found indicating Rin.G represents a separate brand.
-
-Decision:
-Standardized.
-
-Transformation Applied:
+```text
 Rin.G → Ring
+```
 
-Location:
-Working_Data sheet only.
+### Location
 
-Reason:
-Available supporting fields indicate the value is a typographical variation of Ring rather than a distinct brand.
+Working_Data only
 
-Data Integrity Note:
-The original Raw_Data sheet was preserved without modification.
+### Result
 
-
-Reason:
-Available supporting fields indicate the value is a typographical variation of Ring rather than a distinct brand.
+Improved brand consistency while preserving the original source data.
 
 ---
-### Placeholder Value Review
 
-Record:
-Row 514
+## Product Type Standardization
 
-Field:
-Product Type
+### Issue Identified
 
-Observed Value:
-?
+Multiple naming variations were identified for the same product category.
 
-Context:
-Product title references a Digital Video Recorder and primary category is Surveillance DVRs & NVRs.
-
-Decision:
-No modification performed.
-
-Reason:
-Product classification can be reasonably inferred but cannot be verified from available dataset documentation.
-
-Original value retained to preserve data integrity.
-
-### Product Type Review
-
-Potential Issue:
-Product Type value "?" identified during review.
-
-Validation Performed:
-
-* Product title reviewed.
-* Brand reviewed.
-* Primary Category reviewed.
-
-## Cleaning Decision Log
-
-### Structural Validation Review
-
-Issue Identified:
-
-- Column J and Column AD share the same header name (condition_score).
-
-Validation Findings:
-
-- Sampled records showed substantially different values between the two columns.
-- No evidence currently supports treating the columns as duplicates.
-
-Decision:
-
-- No renaming performed.
-- No column removal performed.
-- Original dataset structure retained.
-
-Reason:
-
-Dataset documentation does not provide sufficient information to determine whether the repeated header represents a labeling issue, feature-engineering output, or an intentional dataset design choice.
-
-The original structure has been preserved to maintain data integrity.
-Evidence:
-
-* Product title identifies the product as a Digital Video Recorder.
-* Primary Category is Surveillance DVRs & NVRs.
-* The value "?" does not provide meaningful business classification.
-
-Decision:
-Under Review
-
-Reason:
-Although supporting fields suggest a likely product classification, dataset documentation does not currently provide sufficient business rules to justify replacing the value.
-
-### Dataset Structure Review
-
-Issue:
-Condition Score appears twice within the dataset structure.
-
-Finding:
-Sample validation identified materially different values between the two columns.
-
-Decision:
-No modifications performed.
-
-Reason:
-Available evidence does not support treating the columns as duplicates. Dataset documentation is unavailable and the original structure has been preserved.
-
-### Product Type Standardization
-
-Field:
-Product Type
-
-Issue Type:
-Naming Inconsistency
-
-Original Values:
+### Original Values
 
 * Bullet Or Dome
 * Bullet/ Dome For Option!
 
-Standardized Value:
+### Standardized Value
 
-* Bullet / Dome
+```text
+Bullet / Dome
+```
 
-Validation:
-Product titles and category review confirmed that all values represent the same Bullet/Dome camera category.
+### Validation
 
-Action Taken:
-Values standardized within WORKING_DATA.
+Product titles and category classifications confirmed all values represented the same product category.
 
-RAW_DATA preserved unchanged.
+### Action Taken
+
+Standardized values within Working_Data.
 
 ---
 
-Field:
-Product Type
+### Issue Identified
 
-Issue Type:
-Singular/Plural Naming Inconsistency
+Singular and plural naming inconsistencies.
 
-Original Value:
+### Original Value
+
+```text
 CCTV Cameras
+```
 
-Standardized Value:
+### Standardized Value
+
+```text
 CCTV Camera
+```
 
-Validation:
-Product titles and category review confirmed that both values represent the same product type.
+### Validation
 
-Action Taken:
-Value standardized within WORKING_DATA.
+Product titles and category classifications confirmed both values represented the same product type.
 
-RAW_DATA preserved unchanged.
+### Action Taken
 
+Standardized within Working_Data.
 
+---
 
-## Geographic Review
+## Geographic Standardization
 
-Seller geographic fields were reviewed for consistency.
+### Review Scope
 
-Findings included:
+Seller geographic information was reviewed for consistency.
 
-- State abbreviations and full state names (TX/Texas, FL/Florida, CA/California)
-- Multiple representations of United States in Seller Country
-- Capitalization inconsistencies within Seller City values
+### Findings
 
-Cleaning Actions Performed:
+The following formatting inconsistencies were identified:
 
-- City Of Industry → City of Industry
-- Multiple locations → Multiple Locations
+* City capitalization inconsistencies
+* Seller location naming variations
 
-No changes were made to state or country values.
+### Cleaning Actions
 
-Reason:
+Standardized:
 
-Business rules and geographic reference documentation were unavailable. Source-system values were retained to preserve data integrity and maintain traceability.
+```text
+City Of Industry → City of Industry
+Multiple locations → Multiple Locations
+```
 
-No modification has been performed at this stage.
-## SQL Dataset Preparation
+### Data Preservation Decision
 
-A dedicated SQL-ready dataset was created from the validated Working_Data sheet.
+No modifications were made to:
 
-Confirmed duplicate structural fields were excluded from the SQL export version to ensure compatibility with relational database requirements.
+* Seller State
+* Seller Country
 
-Alternate MPN, UPC, and Condition Score fields were retained and renamed to preserve information while maintaining unique column names.
+### Reason
 
-The SQL-ready dataset was exported as CSV and imported into MySQL Workbench for business analysis.
+Original source values were preserved where no documented business rules were available.
+
+---
+
+# Structural Validation Review
+
+## Duplicate Field Assessment
+
+Repeated field names were identified during dataset validation.
+
+Examples included:
+
+* Title
+* Brand
+* Product Type
+* Primary Category
+* Smart Home Ecosystem
+* Brand Tier
+* Condition
+* Condition Score
+
+### Validation Findings
+
+Field comparisons revealed that some repeated columns contained identical values while others contained materially different information.
+
+### Decision
+
+No columns were removed during validation.
+
+### Reason
+
+The available dataset documentation did not provide sufficient evidence to justify structural modifications.
+
+The original dataset structure was preserved until SQL preparation was completed.
+
+---
+
+# Placeholder Value Review
+
+## Product Type Assessment
+
+### Observation
+
+A small number of records contained placeholder values.
+
+### Validation Performed
+
+Reviewed:
+
+* Product Title
+* Product Category
+* Product Context
+
+### Decision
+
+No values were replaced.
+
+### Reason
+
+While probable classifications could be inferred, no documented business rules existed to support automated replacement.
+
+Original values were retained to preserve data integrity.
+
+---
+
+# Numeric Field Validation
+
+The following fields were reviewed for accuracy and consistency:
+
+* Price
+* WasPrice
+* Discount Percentage
+* Savings USD
+* Units Sold
+* Available Inventory
+
+### Findings
+
+* No negative values identified
+* No impossible values identified
+* No obvious outliers requiring correction
+
+### Result
+
+Fields were approved for analysis without modification.
+
+---
+
+# Feature Engineering Preparation
+
+The cleaned dataset was prepared for analytical enhancement and business metric creation.
+
+Metrics developed during the project included:
+
+* Estimated Revenue
+* Price Tier Classification
+* Commercial Value Score
+* Technical Richness Score
+* Global Reach Score
+
+These metrics were created within the Working_Data environment while preserving the original dataset.
+
+---
+
+# SQL Dataset Preparation
+
+A dedicated SQL-ready version of the dataset was prepared for database analysis.
+
+### Activities Completed
+
+* Reviewed dataset structure
+* Confirmed field consistency
+* Prepared CSV export version
+* Maintained unique field naming requirements
+* Preserved analytical attributes for future SQL use
+
+### SQL Environment Setup
+
+* Created MySQL database environment
+* Validated import process
+* Verified dataset accessibility
+* Prepared environment for future structured querying
+
+---
+
+# Cleaning Summary
+
+### Completed Activities
+
+* Brand Standardization
+* Product Type Standardization
+* Geographic Standardization
+* Numeric Validation
+* Structural Validation
+* Placeholder Value Review
+* Feature Engineering Preparation
+* SQL Dataset Preparation
+
+### Data Integrity Outcome
+
+The dataset was successfully cleaned, validated, and prepared for exploratory analysis, KPI development, business reporting, visualization, and portfolio presentation while preserving the integrity of the original source data.
