@@ -2,87 +2,73 @@
 
 ## Project Title
 
-Home Surveillance Ecommerce Analysis
+Home Surveillance E-commerce Analysis
 
 ---
 
-## Project Domain
+# Project Domain
 
 ### Primary Domain
 
-* Ecommerce Analytics
+E-commerce Analytics
 
-### Related Analytics Areas
+### Related Domains
 
 * Product Analytics
-* Operations Analytics
 * Business Intelligence
 * Revenue Analytics
+* Operations Analytics
 * Smart Technology Analytics
 
 ---
 
-## Project Overview
+# Project Overview
 
-This project analyzes ecommerce product listings, inventory information, pricing data, sales metrics, seller operations, and smart-device features related to home surveillance and smart security products.
+This project analyzes a home surveillance e-commerce marketplace dataset containing surveillance cameras, DVR/NVR systems, smart security devices, accessories, seller information, inventory metrics, pricing data, and revenue indicators.
 
-The objective is to understand product performance, inventory trends, pricing behavior, and operational patterns within the home surveillance ecommerce market.
-
----
-
-## Business Context
-
-Home surveillance and smart security products represent a rapidly growing segment of the ecommerce and smart technology industries.
-
-Businesses operating in this market rely on:
-
-* Product performance analysis
-* Pricing optimization
-* Inventory management
-* Seller performance monitoring
-* Revenue analysis
-* Market demand assessment
-
-Data-driven decision-making in these areas can improve operational efficiency, customer satisfaction, and business performance.
+The analysis focuses on understanding product performance, category trends, pricing strategies, seller effectiveness, inventory behavior, and revenue opportunities within the home surveillance market.
 
 ---
 
-## Project Objectives
+# Business Context
 
-The project aims to:
+The home surveillance industry continues to grow as consumers increasingly adopt smart security solutions and connected home technologies.
 
-* Understand product sales performance
-* Evaluate inventory and demand patterns
-* Analyze pricing and discount strategies
-* Assess seller operational reach
-* Explore product-category performance
-* Generate business-focused insights
-* Develop a professional analytics portfolio project
+Businesses operating in this market require data-driven insights to:
+
+* Optimize pricing strategies
+* Improve inventory planning
+* Identify high-performing products
+* Evaluate seller performance
+* Monitor category trends
+* Support revenue growth initiatives
 
 ---
 
-### Numeric Range Review
+# Project Objectives
 
-Key numeric fields were reviewed using minimum and maximum value checks.
+The primary objectives of this project are to:
 
-Fields reviewed:
+* Identify top-performing products and brands
+* Evaluate category-level performance
+* Analyze pricing and discount effectiveness
+* Assess inventory and demand patterns
+* Measure seller performance and market reach
+* Generate actionable business recommendations
+* Build a complete end-to-end analytics portfolio project
 
-- Price
-- Sold
-- Available
-- Discount Percentage
-- Savings USD
+---
 
-No negative values, impossible values, or obvious outliers were identified.
+# Dataset Overview
 
-The reviewed fields appear suitable for exploratory analysis and SQL-based investigation.
+### Dataset Size
 
+* 862 Product Records
+* 58 Business and Product Attributes
 
-## Dataset Overview
+### Key Data Categories
 
-The dataset contains information related to:
-
-### Product Information
+#### Product Information
 
 * Title
 * Brand
@@ -91,210 +77,244 @@ The dataset contains information related to:
 * Product Type
 * Primary Category
 
-### Pricing and Revenue
+#### Pricing & Revenue Metrics
 
 * Price
-* WasPrice
+* Previous Price
 * Discount Percentage
 * Savings Amount
-* Revenue Proxy Metrics
+* Estimated Revenue
 
-### Inventory and Demand
+#### Inventory & Demand Metrics
 
 * Units Sold
 * Available Inventory
-* Sell Through Rate
-* Demand Tier
+* Product Availability
 
-### Smart Device Features
+#### Product Features
 
 * Wi-Fi Capability
 * Motion Detection
 * AI Detection
+* Voice Control
 * Cloud Storage
 * Local Storage
-* Voice Control
-* Night Vision
-* Additional Smart Security Features
+* Solar Power
+* Two-Way Audio
+* Smart Home Compatibility
 
-### Seller and Shipping Information
+#### Seller Information
 
-* Seller Details
-* Geographic Information
+* Seller Name
+* Location
 * Shipping Reach
-* Global Reach Metrics
+* Global Reach Score
 
 ---
 
-## Tools Used
+# Tools Used
 
 * Google Sheets
-* MySQL
+* Microsoft Excel
+* Pivot Tables
 * GitHub
+* MySQL Workbench
 
 ---
 
-## Project Methodology
+# Data Validation & Quality Assessment
 
-The project follows a validation-first analytical approach.
+A structured validation process was completed before analysis.
 
-Before any cleaning or transformation activities:
+Validation activities included:
 
-1. Dataset structure is reviewed.
-2. Data types are assessed.
-3. Missing values are investigated.
-4. Placeholder values are reviewed.
-5. Duplicate records are assessed.
-6. Numeric and boolean fields are validated.
-
-Where business rules are unavailable, original values are retained to preserve data integrity and avoid unsupported assumptions.
-
----
-
-## Workflow
-
-### Phase 1 — Dataset Understanding
-
-* Review dataset structure
-* Understand business context
-* Identify key metrics
-* Identify analytical opportunities
-
-### Phase 2 — Data Validation
-
-* Missing value assessment
-* Placeholder value investigation
+* Dataset structure review
 * Duplicate assessment
-* Numeric validation
-* Boolean validation
+* Missing value assessment
+* Numeric field validation
+* Boolean field validation
+* Revenue metric verification
+* Category consistency review
 
-### Phase 3 — Data Cleaning
+Key numeric fields reviewed:
 
-* Document cleaning decisions
-* Perform approved transformations
-* Maintain data integrity
-* Preserve raw dataset
+* Price
+* Units Sold
+* Available Inventory
+* Discount Percentage
+* Savings Amount
+* Estimated Revenue
 
-### Phase 4 — Analysis in Google Sheets
+The dataset was determined to be suitable for business analysis.
 
-* Exploratory analysis
-* KPI calculations
+---
+
+# Data Preparation
+
+The dataset was prepared using a structured workflow:
+
+### Cleaning Activities
+
+* Removed duplicate records
+* Standardized data formats
+* Reviewed missing values
+* Validated pricing information
+* Verified product classifications
+* Preserved original source data
+
+### Feature Engineering
+
+Additional business-focused metrics were developed, including:
+
+* Estimated Revenue
+* Price Tier Classification
+* Commercial Value Score
+* Technical Richness Score
+* Global Reach Score
+
+---
+
+# Project Methodology
+
+The project followed a six-stage analytics workflow.
+
+## Phase 1 – Dataset Understanding
+
+* Business context review
+* Dataset familiarization
+* Metric identification
+* Opportunity assessment
+
+## Phase 2 – Data Validation
+
+* Structure validation
+* Quality assessment
+* Consistency review
+
+## Phase 3 – Data Preparation
+
+* Cleaning
+* Standardization
+* Feature engineering
+
+## Phase 4 – Exploratory Analysis
+
+* Descriptive statistics
+* KPI development
 * Trend identification
-* Business observations
+* Performance evaluation
 
-### Phase 5 — Analysis in MySQL
+## Phase 5 – Business Analysis
 
-* Aggregations
-* Filtering
-* Trend analysis
-* Performance analysis
-* Business reporting
+* Revenue analysis
+* Product performance analysis
+* Category analysis
+* Seller analysis
+* Ecosystem analysis
 
-### Phase 6 — Documentation
+## Phase 6 – Documentation
 
-* Document methodology
-* Upload SQL queries
-* Upload screenshots
-* Document findings
-* Publish project to GitHub
-
----
-
-## Initial Business Questions
-
-* Which products generate the highest revenue?
-* Which product categories perform best?
-* Which pricing strategies appear most effective?
-* Which products demonstrate the strongest demand?
-* Which sellers have the greatest market reach?
-* Which operational factors influence product performance?
-
----
-
-## Data Quality Approach
-
-Data quality issues are investigated before any cleaning actions are performed.
-
-Potential areas of review include:
-
-* Missing values
-* Placeholder values
-* Duplicate records
-* Duplicate columns
-* Data consistency issues
-* Field standardization opportunities
-
-All cleaning decisions will be documented and justified before implementation.
-
----
-
-## Expected Deliverables
-
-* Validated dataset
-* Cleaned working dataset
-* Google Sheets analysis
-* MySQL analysis queries
-* Business insights
 * Project documentation
-* GitHub portfolio project
+* GitHub publication
+* Portfolio preparation
+* Case study creation
 
-## Dataset Structure Validation
+---
 
-Repeated field names were identified during dataset validation.
+# Business Questions
 
-Validation revealed that some repeated field names contain identical values, while others contain different values.
+The analysis was designed to answer the following questions:
 
-Examples include:
+* Which products generate the highest estimated revenue?
+* Which brands dominate the marketplace?
+* Which product categories perform best?
+* How do pricing tiers impact performance?
+* Which sellers demonstrate the strongest market presence?
+* Which smart home ecosystems show the greatest adoption?
+* What opportunities exist for revenue growth?
 
-- Title (A/U)
-- Brand (B/V)
-- Product Type (E/Y)
-- Primary Category (F/Z)
-- Smart Home Ecosystem (G/AA)
-- Brand Tier (H/AB)
-- Condition (I/AC)
+---
 
-Additional validation showed that:
+# Exploratory Analysis Completed
 
-- MPN (C/W) contain differing values.
-- UPC (D/X) contain differing values.
+The following analyses were completed:
 
-Further structural review was performed before any cleaning decisions were made.
+### Revenue Analysis
 
-## Current Stage
+* Revenue by Product
+* Revenue by Brand
+* Revenue by Category
+* Revenue by Seller
+* Revenue by Smart Home Ecosystem
 
-Data Exploration
+### Inventory Analysis
+
+* Available Inventory by Brand
+* Inventory Distribution
+* Product Availability Review
+
+### Sales Analysis
+
+* Units Sold by Brand
+* Product Demand Evaluation
+
+### Category Analysis
+
+* Product Type Performance
+* Primary Category Performance
+
+### Seller Analysis
+
+* Seller Reach Evaluation
+* Geographic Distribution Review
+
+---
+
+# SQL Environment Setup
+
+A MySQL environment was configured to support future structured querying and business intelligence workflows.
+
+Activities completed:
+
+* Database creation
+* Environment configuration
+* Data import validation
+* Record verification
+* SQL project documentation
+
+---
+
+# Deliverables
+
+* Cleaned Working Dataset
+* Validation Documentation
+* KPI Development Framework
+* Data Exploration Analysis
+* Pivot Table Analysis
+* Business Insights
+* Project Documentation
+* SQL Environment Setup
+* GitHub Portfolio Repository
+* Portfolio Case Study
+
+---
+
+# Project Status
 
 ### Completed
 
-- Dataset Validation
-- Data Cleaning
-- Data Quality Assessment
-- Revenue metric creation (Estimated Revenue)
+* Dataset Validation
+* Data Preparation
+* Feature Engineering
+* Exploratory Analysis
+* KPI Development
+* Pivot Table Analysis
+* Revenue Analysis
+* Inventory Analysis
+* Seller Analysis
+* GitHub Documentation
+* Portfolio Case Study
 
-### In Progress
+### Outcome
 
-- Descriptive Statistics
-- KPI Development
-- Revenue Analysis
-- Inventory Analysis
-
-No columns were removed during validation.
-
-
-
-## Exploratory Data Analysis Completed
-
-The following exploratory analyses were completed:
-
-- Descriptive Statistics
-- KPI Development
-- Revenue Analysis by Brand
-- Revenue Analysis by Product Type
-- Revenue Analysis by Primary Category
-- Revenue Analysis by Seller
-- Revenue Analysis by Smart Home Ecosystem
-- Units Sold Analysis by Brand
-- Inventory Analysis by Brand
-
-Exploratory analysis findings were documented prior to SQL analysis.
+The project successfully transformed raw e-commerce surveillance product data into actionable business insights that support pricing strategy, inventory planning, product positioning, and marketplace performance evaluation.
