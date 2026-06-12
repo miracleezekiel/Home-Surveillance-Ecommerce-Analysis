@@ -1,24 +1,73 @@
 # Cleaned Dataset
 
-This folder contains the SQL-ready version of the Home Surveillance Ecommerce dataset used for analysis.
+## Overview
+
+This folder contains the validated working dataset used for business analysis in the Home Surveillance Ecommerce Analysis project.
+
+The dataset was prepared from the original source data following a structured validation and cleaning process designed to preserve data integrity while improving analytical usability.
+
+---
 
 ## Dataset Preparation
 
-The dataset was cleaned, validated, and reviewed before export.
+The following activities were completed before analysis:
 
-Actions performed include:
-
-* Text standardization review
-* Duplicate field validation
-* Product type review
-* Geographic review
+* Dataset structure validation
+* Duplicate field assessment
+* Brand standardization
+* Product type standardization
+* Geographic formatting review
 * Missing value assessment
+* Numeric field validation
+* Data consistency review
+* Feature engineering
 * Revenue metric creation
-* SQL export preparation
 
-## File
+All cleaning activities were documented and performed within the working dataset while preserving the original raw data.
 
-cleaned_working_data.csv
+---
 
-This file was exported from the validated Working_Data worksheet and used for MySQL business analysis.
+## File Contents
 
+### cleaned_working_data.csv
+
+The primary analytical dataset used throughout the project.
+
+This file was utilized for:
+
+* Exploratory Data Analysis (EDA)
+* KPI Development
+* Pivot Table Analysis
+* Revenue Analysis
+* Inventory Analysis
+* Demand Analysis
+* Business Insight Generation
+
+---
+
+## Dataset Summary
+
+* Total Records: 862
+* Business Domain: Ecommerce Analytics
+* Industry Focus: Home Surveillance & Smart Security
+* Analysis Environment: Google Sheets and MySQL
+
+---
+
+## Key Metrics Included
+
+* Product Information
+* Pricing Metrics
+* Inventory Metrics
+* Sales Metrics
+* Seller Information
+* Geographic Information
+* Smart Device Features
+* Revenue Metrics
+* Commercial Value Indicators
+
+---
+
+## Purpose
+
+This dataset serves as the final validated analytical dataset supporting all business findings, visualizations, and portfolio deliverables presented in this project.
